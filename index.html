@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TailwindCSS Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <!--  NavBar -->
+    <header class="bg-white border-b">
+      <div
+        class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-2">
+          <span
+            class="inline-grid place-items-center w-8 h-8 rounded-full border text-purple-600"
+            >◎</span
+          >
+          <span class="sr-only">Logo</span>
+        </div>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#how" class="text-gray-600 hover:text-black">Build</a>
+          <a href="#create" class="text-gray-600 hover:text-black">Create</a>
+          <a href="#team" class="text-gray-600 hover:text-black">Team</a>
+          <a
+            href="#"
+            class="bg-purple-600 text-white px-3 py-1 rounded hover:bg-purple-700"
+            >Sign up</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <!-- Hero -->
+      <section class="grid md:grid-cols-2 gap-6 items-start">
+        <!-- left card -->
+        <div class="bg-white p-6 rounded shadow">
+          <p
+            class="text-[10px] uppercase tracking-wider text-purple-700 font-semibold"
+          >
+            Mamba design system
+          </p>
+          <h1 class="text-3xl font-extrabold mt-1">
+            Build it with <br /><span class="text-gray-900">Mamba</span>
+          </h1>
+          <p class="mt-3 text-sm text-gray-600">
+            Modular and versatile. The ultimate design toolkit for savvy
+            technology startups.
+          </p>
+          <div class="mt-5 space-y-2 max-w-xs">
+            <input
+              type="text"
+              placeholder="Your name"
+              class="border p-2 w-full rounded"
+            />
+            <input
+              type="email"
+              placeholder="Email address"
+              class="border p-2 w-full rounded"
+            />
+            <button
+              class="bg-purple-600 text-white px-4 py-2 rounded w-full hover:bg-purple-700"
+            >
+              Join the waitlist
+            </button>
+          </div>
+        </div>
+        <!-- right image -->
+        <img
+          src="https://picsum.photos/seed/picsum/900/520"
+          alt="Hero"
+          class="rounded shadow w-full h-[360px] object-cover"
+        />
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section id="how" class="pt-12">
+        <div class="text-center">
+          <p
+            class="text-[10px] uppercase tracking-[.3em] text-purple-700 font-semibold"
+          >
+            How it works
+          </p>
+          <h2 class="mt-2 text-3xl font-extrabold">
+            Building with Mamba is simple
+          </h2>
+        </div>
+        <div class="mt-8 grid md:grid-cols-3 gap-4">
+          <div class="bg-white p-4 rounded shadow">
+            <div
+              class="w-8 h-8 rounded-full bg-purple-100 text-purple-700 grid place-items-center font-bold"
+            >
+              1
+            </div>
+            <h3 class="font-bold mt-3">Nulla.</h3>
+            <p class="text-sm text-gray-600">
+              Nostrum, corrupti blanditiis. Illum, architecto?
+            </p>
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <div
+              class="w-8 h-8 rounded-full bg-purple-100 text-purple-700 grid place-items-center font-bold"
+            >
+              2
+            </div>
+            <h3 class="font-bold mt-3">Accusantium.</h3>
+            <p class="text-sm text-gray-600">
+              Vitae saepe atque neque sunt eius dolor veniam alias debitis?
+            </p>
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <div
+              class="w-8 h-8 rounded-full bg-purple-100 text-purple-700 grid place-items-center font-bold"
+            >
+              3
+            </div>
+            <h3 class="font-bold mt-3">Maxime.</h3>
+            <p class="text-sm text-gray-600">
+              Expedita temporibus culpa reprehenderit doloribus consectetur
+              odio!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Create with us -->
+      <section id="create" class="pt-12">
+        <h2 class="text-3xl font-extrabold">Create with us</h2>
+        <p class="mt-2 text-sm text-gray-600 max-w-3xl">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
+          eaque optio error, minus libero tenetur commodi.
+        </p>
+
+        <div class="mt-6 grid md:grid-cols-2 gap-6">
+          <img
+            src="https://picsum.photos/1000/420"
+            class="rounded shadow w-full h-60 object-cover"
+            alt="Post image"
+          />
+          <article class="bg-white p-6 rounded shadow">
+            <span
+              class="inline-block text-xs px-2 py-0.5 rounded-full bg-purple-100 text-purple-800 font-semibold"
+              >Business</span
+            >
+            <h3 class="mt-3 text-xl font-extrabold">
+              Curating a workplace that inspires team movement
+            </h3>
+            <p class="mt-4 text-xs text-gray-500">
+              November 30, 2020 · By Leroy Jenkins
+            </p>
+          </article>
+        </div>
+
+        <div class="mt-6 grid md:grid-cols-3 gap-4 text-sm">
+          <div class="bg-white p-4 rounded shadow">
+            <p>
+              <span class="font-semibold">Panel-based blocks.</span> Flexible
+              panels that are perfect for functional layouts.
+            </p>
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <p>
+              <span class="font-semibold">Responsive design.</span> Panels look
+              great no matter the device.
+            </p>
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <p>
+              <span class="font-semibold">Premium support.</span> Join over 50
+              000 satisfied customers who use our templates.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our team -->
+      <section id="team" class="pt-12 text-center">
+        <h2 class="text-3xl font-extrabold">Our team is here to help you.</h2>
+        <a
+          href="#"
+          class="mt-1 inline-block text-sm text-purple-700 hover:underline"
+          >Meet our crew &gt;</a
+        >
+        <div class="mt-6 bg-white rounded shadow overflow-hidden">
+          <img
+            src="https://picsum.photos/1200/420"
+            alt="Team"
+            class="w-full h-72 object-cover"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-center text-xs text-gray-500 py-8">
+      &copy; 2025 Blog Sitesi. Tüm Hakları Saklıdır.
+    </footer>
+  </body>
+</html>
